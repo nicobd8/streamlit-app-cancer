@@ -1,0 +1,20 @@
+/* Dentro de assets/style.css */
+.st-emotion-cache-1nu03qi {
+    background-color: #f0f2f6; /* Cambia esto al color que use el tutor */
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.diagnosis {
+    color:#fff;
+    padding: 0.2em 0.5em;
+    border-radius: 0.5em;
+}
+
+.diagnosis.benign {
+    background-color: #4CAF50; /* Verde para benigno */
+}
+
+.diagnosis.malignant {
+    background-color: #F44336; /* Rojo para malicioso */
+}
