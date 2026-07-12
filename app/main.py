@@ -198,12 +198,13 @@ def add_predictions(input_data):
         )
 
     st.write(
-        "Probability of being benign: ", model.predict_proba(input_array_scaled)[0][0]
+        "Probability of being benign: ",
+        f"{model.predict_proba(input_array_scaled)[0][0] * 100:.2f}%",
     )
     # 0 o 1, dependiendo de la clase. En este caso, 0 es benigno y 1 es maligno
     st.write(
         "Probability of being malignant: ",
-        model.predict_proba(input_array_scaled)[0][1],
+        f"{model.predict_proba(input_array_scaled)[0][1] * 100:.2f}%",
     )
     st.write(
         "This app can assist medical professionals in making informed decisions regarding breast cancer diagnosis, but it should not replace professional medical advice."
